@@ -1,0 +1,71 @@
+
+
+
+
+
+.title{
+  
+    padding: 20px;
+
+}
+
+
+.starts{
+justify-content: center;
+    display: flex;
+
+  }
+  .starts img{
+padding: 30px 50px;
+transform: rotate(0);
+transition-duration: 1s;
+  }
+
+  .starts img:hover{
+    transform: rotate(180deg);
+  }
+
+  /* .starts .starflip:hover{
+  
+  
+  } */
+  .title h1{
+    font-family: 'Half Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 112%;
+    
+    /* or 67px */
+    text-align: center;
+    letter-spacing: 0.02em;
+  
+  color: #383838;
+  }
+
+
+  @media screen and (max-width: 1000px){
+    .title h1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.title{
+  
+  padding: 5px;
+margin: 15px 0;
+}
+
+.starts{
+
+
+    padding-top: 20px;
+    }
+.starts img{
+
+    }
+    .starts img{
+      width: 54px;
+      height: 50%;
+      padding: 10px 10px;
+    }
+  }

@@ -1,0 +1,204 @@
+.home{
+
+
+  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.53);
+  -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.53);
+    padding: 100px 100px;
+    border-radius: 25px;
+    background-color: #1b1a1a;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+ z-index: 1;
+    margin: 30px 0px;
+}
+.home::before{
+  position: absolute;
+  content: '';
+  background: url("https://www.pyxel.ma/assets/banner_bg.0f9d79b9.svg");
+
+  content: '';
+  opacity: .7;
+  z-index: -1;
+  background-size: cover;
+  inset: 0 0 0 0;
+  max-width: 100%;
+  max-height: 100%;
+
+
+}
+.home h1{
+  /* <img src={starHome}></img> */
+    font-family: 'Half Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 84px;
+  z-index: 520;
+  line-height: 90px;
+
+  letter-spacing: 0.04em;
+
+  padding-bottom: 00px;
+  max-width: 100%;
+  max-height: 100%;
+  }
+  #svgStart{
+
+    transform: translateY(6px) scale(.8);
+
+  }
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    
+  }
+  .banner .text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 174.9%;
+    z-index: 100;
+
+    max-width: 100%;
+  max-height: 100%;
+    letter-spacing: 0.04em;
+    padding-top: 60px;
+  }
+
+  /* .btn-box{
+    border: 1px solid rgb(125, 125, 125);
+  } */
+
+  /* <button class="btn-box"><a href="#Team">Apropos</a></button> */
+
+      
+
+  .home .btn-box a {
+    display: block;
+    margin-left: auto;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+
+
+    letter-spacing: 0.04em;
+    font-size: 2rem;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 4px 25px;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .home .btn-box a::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 3px;
+   
+    background: linear-gradient(302deg,#2c9bff,#d982ff,#2c9bff);
+    background-size: 180% 180%;
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+      mask-composite: add, add;
+
+    mask-composite: exclude;
+
+  
+  
+  }
+
+  
+.btn-box a:hover::before{
+  animation: gradient-animation 3s ease infinite;
+
+  
+
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*  new button */
+
+
+
+
+
+@media screen and (max-width: 1000px){
+  .home{
+
+
+
+      padding: 100px 100px;
+      border-radius: 25px;
+
+  }
+
+  .home h1{
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  justify-content: center;
+  }
+#svgStart{
+
+  transform: translateY(6px) scale(.6);
+}
+  .home .text{
+    padding-top: 20px;
+    width: 100%;
+   
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .banner{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .home .btn-box a::before {
+    border-radius: 5px;
+    padding: 2px;
+}
+.home .btn-box a {
+  display: block;
+  margin-left: auto;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 4px 25px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.home {
+  padding: 25px 36px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+}

@@ -1,0 +1,551 @@
+
+
+
+.Contact {
+    position: relative;
+    margin: 0 0px;
+
+
+
+}
+
+.Contact .inputvalid {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact .errorMSG {
+    text-align: start;
+    color: red;
+    padding-left: 30px;
+    font-size: 0.7em;
+}
+
+.Contact .Form {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 49px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 20px;
+    /* box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.53); */
+}
+
+.Contact .input_1 {
+    display: flex;
+    gap: 17px;
+
+
+}
+
+.Contact .Form_input {
+    width: 100%;
+    display: flex;
+}
+
+.Contact .checkbox {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Contact .check {
+    display: flex;
+}
+
+.Contact .Form_input input {
+    width: 100%;
+    outline: none;
+    padding: 17px 25px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* font-family: var(--montserrat); */
+    border: none;
+    width: 100%;
+
+
+    border-radius: 82px;
+
+    border: 1px solid rgb(125, 125, 125);
+
+
+    overflow: hidden;
+}
+
+.Contact .input_checkbox {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.Contact .checkbox_list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+
+}
+
+.Contact .checker label {
+    display: flex;
+    gap: 9px;
+}
+
+.Contact .checker label input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #7d7d7d;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+input {
+    accent-color: #2C9BFF;
+}
+
+.Contact .checker label p {
+    font-size: 16px;
+    font-family: var(--montserrat);
+    font-weight: 500;
+    color: #7d7d7d;
+}
+
+.Contact .btndev {
+    display: flex;
+    justify-content: center;
+}
+
+.Contact .btn_submit {
+
+    width: 8em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 10px;
+    color: white;
+
+
+    cursor: pointer;
+    font-size: 26px;
+    font-family: var(--montserrat);
+    font-weight: 700;
+
+    background: linear-gradient(302deg, #2c9bff, #d982ff, #2c9bff);
+    background-size: 180% 180%;
+    border-radius: 5px;
+    border: none;
+    /* box-shadow: -1px 1px 2px 0px #2c9bff,;
+   -webkit-box-shadow: -1px 1px 2px 0px #2c9bff;
+   -moz-box-shadow: -1px 1px 2px 0px #2c9bff; */
+
+}
+
+.Contact .btn_submit:hover {
+    animation: gradient-animation 3s ease infinite;
+    /* background: linear-gradient(91.92deg, #D982FF 0%, #2C9BFF 100%); */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Contact .msgBarContect{
+
+    display: flex;
+    flex-direction: column;
+}
+/* //////////// Thanks////////////////// */
+.Contact .popup {
+    z-index: 999;
+    width: 450px;
+    height: 320px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+
+
+}
+
+.Contact .smallBtnClose {
+    top: 1%;
+    left: 92%;
+    transform: translate(-50%, -50%) scale(0.1);
+    position: absolute;
+
+    transform: scale(0.5);
+    cursor: pointer
+}
+
+.Contact .downPop {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.Contact .blur {
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background-color: rgb(8, 8, 8);
+
+
+    left: 100%;
+    position: absolute;
+    transition: transform 0.4s, top 0.4s;
+    top: 100%;
+    transform: translate(-100%, -100%)scale(0.1);
+    visibility: hidden;
+}
+
+.Contact .overFlowActive {
+    visibility: visible;
+    transform: translate(-100%, -100%)scale(1);
+    border-radius: 15px;
+}
+
+
+.Contact .popupMsg {
+    visibility: visible;
+    top: 60%;
+
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup .btnClose {
+    width: 30%;
+
+
+
+    background: linear-gradient(91.92deg, #2C9BFF 0%, #D982FF 100%);
+
+
+    width: 5.5em;
+    height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    color: white;
+
+
+    cursor: pointer;
+    font-size: 22px;
+    font-family: var(--montserrat);
+    font-weight: 700;
+
+    background: linear-gradient(302deg, #2c9bff, #d982ff, #2c9bff);
+    background-size: 180% 180%;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.Contact .btnClose:hover {
+    animation: gradient-animation 3s ease infinite;
+    /* background: linear-gradient(91.92deg, #D982FF 0%, #2C9BFF 100%); */
+}
+
+.Contact .popup img {
+
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Contact .popup h1 {
+
+    font-size: 2rem;
+
+
+}
+
+.Contact .popup p {
+
+    font-size: 1rem;
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+
+    .Contact .input_1 {
+        display: flex;
+        gap: 17px;
+        flex-direction: column;
+
+    }
+
+    .Contact .Form_input input {
+
+        padding: 9px 25px;
+        font-size: 16px;
+        width: 100%;
+
+
+
+
+
+    }
+
+    .Contact .checkbox_list {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+
+    }
+
+    .Contact .Form {
+
+        padding: 19px 19px;
+
+        height: 70%;
+        gap: 15px;
+        margin-top: 50px;
+
+    }
+
+    .Contact .btn_submit {
+
+        width: 5em;
+        height: 1.7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 14px;
+        gap: 6px;
+
+
+
+    }
+
+    .Contact .popup {
+        z-index: 999;
+        width: 322px;
+        height: 300px;
+        background: #FFFFFF;
+        border-radius: 25px;
+        position: absolute;
+
+        padding: 30px 20px;
+
+
+
+
+    }
+
+
+    .popup .btnClose {
+        width: 30%;
+
+
+
+
+
+
+        width: 5.5em;
+        height: 1.5em;
+
+
+
+        font-size: 17px;
+
+
+
+
+
+    }
+
+
+    .Contact .popup h1 {
+
+        font-size: 1.8rem;
+
+
+    }
+
+    .Contact .errorMSG {
+        text-align: start;
+        color: red;
+        padding-left: 30px;
+        margin-bottom: -10px;
+        font-size: 0.5em;
+    }
+
+
+
+    .Contact .smallBtnClose {
+        top: 2%;
+        left: 89%;
+        transform: translate(-50%, -50%) scale(0.1);
+        position: absolute;
+
+        transform: scale(0.45);
+        cursor: pointer
+    }
+
+    .Contact .downPop {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+
+
+    .Contact .popup {
+        z-index: 999;
+        width: 280px;
+        height: 370px;
+
+        background: #FFFFFF;
+        border-radius: 25px;
+        position: absolute;
+
+        padding: 30px 20px;
+
+
+
+
+    }
+
+
+    .popup .btnClose {
+
+
+
+
+
+
+        width: 5.3em;
+        height: 1.3em;
+
+
+
+        font-size: 19px;
+
+
+
+
+
+    }
+
+
+    .Contact .popup h1 {
+
+        font-size: 1.4rem;
+
+
+    }
+
+
+
+
+
+    .Contact .smallBtnClose {
+        top: 2%;
+        left: 84%;
+
+
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+
+
+    .Contact .popup {
+        z-index: 999;
+        width: 200px;
+        height: 370px;
+
+        background: #FFFFFF;
+        border-radius: 25px;
+        position: absolute;
+
+        padding: 30px 20px;
+
+
+
+
+    }
+
+    .popup .btnClose {
+
+
+
+
+
+
+        width: 5.3em;
+        height: 1.3em;
+
+
+
+        font-size: 17px;
+
+
+
+
+
+    }
+
+}

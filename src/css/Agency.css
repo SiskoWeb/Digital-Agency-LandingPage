@@ -1,0 +1,105 @@
+
+
+.Agency {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.Agency img{
+  flex-basis: 50%;
+  width: 70%;
+  height: auto;
+
+}
+.Agency .parag {
+text-align: start;
+    display: flex;
+    flex-direction: column;
+
+  max-width: 100%;
+  max-height: 100%;
+   align-items:flex-end;
+
+}
+
+.Agency h3 {
+  width: 90%;
+
+
+
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 112%;
+   
+    letter-spacing: 0.02em;
+
+    color: #000000;
+
+margin-bottom: 40px;
+
+
+
+}
+
+.Agency .p2 {
+
+  flex-basis: 100%;
+
+    width: 90%;
+    height: auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 112%;
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+
+
+
+
+}
+
+/* ==========Resp=================== */
+
+
+
+@media screen and (max-width: 1000px){
+
+  .Agency img{
+    flex-basis: 50%;
+    width: 40%;
+    height: auto;
+padding-right: 10px;
+  }
+
+  .Agency p {
+
+display: none;
+  }
+  .Agency h3 {
+display: flex;
+flex-basis: 50%;
+
+    font-size: 14px;
+
+  }
+  .Agency {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+}

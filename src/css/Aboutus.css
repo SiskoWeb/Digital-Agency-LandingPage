@@ -1,0 +1,182 @@
+/* // X-Large devices (large desktops, 1200px and up) */
+
+.Aboutus {
+margin: 0 auto;
+
+}
+
+.Aboutus nav{
+display: flex;
+justify-content: space-evenly;
+
+padding-bottom: 50px;
+
+}
+.Aboutus nav a{
+
+  position: relative;
+}
+
+.Aboutus nav a ::after{
+
+
+
+
+position: absolute;
+content: "";
+height: 3px;
+width: 100%;
+background: linear-gradient(90.09deg, #2C9BFF 0%, #D982FF 100%);
+border-radius: 23px;
+bottom:0%;
+left: 0%;
+display: block;
+/* transition-duration: 1s; */
+
+animation-duration: .7s;
+animation-name: barAbout;
+
+}
+@keyframes barAbout {
+  0%{
+
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+
+}
+.Aboutus nav a.active{
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 112%;
+  
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+
+  background: linear-gradient(92.05deg, #2C9BFF 0%, #D982FF 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  
+transition-duration: .4s;
+
+
+
+}
+
+
+
+.Aboutus a{
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6em;
+  line-height: 112%;
+  position: relative;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2C9BFF;
+
+  
+
+}
+.Aboutus nav a::after{
+  position: absolute;
+  width:100%;
+  height: 1z4px;
+  left: 12px;
+  top: 50px;
+  
+  background: linear-gradient(90.09deg, #2C9BFF 0%, #D982FF 100%);
+  border-radius: 23px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  } 
+
+  .underNv{
+display: none;
+    height: 4px;
+    background: linear-gradient(90.09deg, #2C9BFF 0%, #D982FF 100%);
+    border-radius: 23px;
+    transition-duration: .4s;;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+ 
+
+  .Aboutus .active .underNv{
+    display: block;
+  }
+
+  @media screen and (max-width: 1000px){
+
+
+.Aboutus nav{
+  display: flex;
+  justify-content: space-evenly;
+  
+  padding-bottom: 20px;
+  
+  }
+  
+  .Aboutus nav a.active{
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 90%;
+
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+  
+  
+    background: linear-gradient(92.05deg, #2C9BFF 0%, #D982FF 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    
+  transition-duration: .4s;
+  
+  
+  
+  }
+  
+  
+  
+  .Aboutus a{
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 90%;
+    position: relative;
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2C9BFF;
+  
+    
+  
+  }
+}

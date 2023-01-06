@@ -1,0 +1,159 @@
+
+
+
+.team {
+
+  display: flex;
+  
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team .image img{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.Projects .image-grid {
+
+
+
+  display: grid;
+  grid-template-areas: "a b b" "c c d";
+  row-gap: 25px ;
+  column-gap: 25px ;
+
+  margin-top: 20px ;
+
+
+
+
+}
+
+.Projects .image>img {
+
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.Projects .a {
+  grid-area: a;
+}
+
+.Projects .b {
+  grid-area: b;
+}
+
+.Projects .c {
+  grid-area: c;
+}
+
+.Projects .d {
+  grid-area: d;
+}
+
+
+
+.Projects .image-grid .image {
+  position: relative;
+
+}
+
+
+
+.Projects .image-grid .image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.Projects .image-grid .image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.Projects .image-grid .image__overlay--primary {
+  background: #242424;
+  border-radius: 6%;
+  transition-duration: .5s;
+}
+
+.Projects .image-grid .image__overlay>* {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.Projects .image-grid .image__overlay:hover {
+  opacity: 0.5;
+}
+
+.Projects .image-grid .image__overlay:hover>* {
+  transform: translateY(0);
+}
+
+.Projects .image-grid .image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+
+
+
+/* =============Responsiv======================== */
+
+@media screen and (max-width: 1000px){
+
+
+  .Projects .image-grid {
+
+
+    grid-template-areas:
+    "b b"
+    "a d"
+    "c c";
+column-gap: 12px;
+row-gap: 12px;
+margin-top: 10px;
+  
+    height: auto;
+  
+  
+  }
+  
+  .Projects .image>img {
+    width: 100%;
+   height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .Projects .image-grid .image__title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+
+ }
+

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Half Regular";
+    src: url(".\\fonts\\Half Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(".\\fonts\\Montserrat.ttf");
+}
+@font-face {
+    font-family: "Arial";
+    src: url(".\\fonts\\Arial.ttf");
+}
+
+
+:root{
+    font-size: 16px;
+    --montserratFont: "Montserrat", sans-serif;
+    --MaincolorOne: #2C9BFF;
+    --MaincolorTwo: #D982FF;
+    --MainPadding: 49px 70px;
+}
+.containerMain{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
+   
+    overflow-x: hidden;
+}
+
+::selection{
+    background-color: #2C9BFF;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
